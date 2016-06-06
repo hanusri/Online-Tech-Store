@@ -1,0 +1,286 @@
+/*-----------------------------------
+    Header
+-------------------------------------*/
+header
+{
+  background-color: #333333;
+  height: 60px;
+  width: 100%;   
+  color: #ffffff;
+  font-family: Proxima Nova;
+  font-size: 16px;
+  font-weight: lighter;
+  position: relative;
+  text-align: center;
+  padding-left: 20px;
+ }
+ #menucontainer
+ {
+  width: 100%;
+ }
+.pageheader
+{
+  list-style-type: none;
+}
+.pageheader .menulist
+{
+  padding: 20px 10px 0px 0px;
+  float: left;
+  padding-left: 40px;
+}
+.pageheader .useritem
+{
+  padding: 20px 10px 0px 0px;
+}
+#icons
+{
+  padding-left: 20px;
+}
+.pageheader .cart
+{
+  padding-left: 0;
+}
+.pageheader .welcomename
+{
+  padding-left: 20px;
+  color: #2B9FFB;
+  text-decoration: None
+}
+.pageheader li
+{
+  float: left;
+  padding-left: 50px;
+}
+.pageheader #logo img
+{
+  width: 35px; 
+  height: 50px;
+  margin: 3px auto;
+}
+.pageheader li img
+{
+  width: 20px; 
+  height: 20px;
+  padding-bottom: 2.5px;
+}
+.pageheader a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover 
+{
+  color: #B9B9B9 !important;
+}
+.search 
+{ 
+  background-color: #333333;
+  -moz-border-radius:10px; 
+  -webkit-border-radius:10px; 
+  border-color: #333333;
+  width: 150px;
+  height: 25px;
+  color: white;
+}
+.searchtab 
+{ 
+  position: relative; 
+  width: 150px;
+  padding-left: 15px;
+  padding-bottom: 10px; 
+}
+.searchtab img 
+{ 
+  position: absolute; 
+  top: 2px; 
+  right: 0px;
+}
+#cartCount
+{
+  font-size: 14px;
+  color: #2B9FFB;
+  font-family: Proxima Nova;
+}
+
+/*-----------------------------------
+    Edit Profile
+-------------------------------------*/
+#editprofilebody
+{
+  background:url(../img/addtocart/back.jpg)  no-repeat center fixed;
+  background-size: cover;
+  font-family: Proxima Nova;
+  width: 100%;
+  float: left;
+  margin: auto;
+}
+#editprofilediv
+{
+  background-color:rgba(72,72,72,0.4);
+  padding: 35px 35px 50px 35px;
+  width: 40%;
+  float: center;
+  left: 350px;
+  position: relative;
+}
+#editprofilediv a
+{
+  color: #ffffff;
+  text-decoration: none
+}
+#userid
+{
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#password
+{
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#dob
+{
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#firstname
+{
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#middlename
+{
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#lastname
+{
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#emailaddress
+{
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#contact
+{
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+.addinput
+{
+  color:#3c3c3c;
+  font-family: Proxima Nova;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 15px 15px 15px 55px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+    border: 3px solid #ffffff;
+}
+#submit
+{
+  font-family: Proxima Nova;
+  width: 40%;
+  border:none;
+  border-radius: 0.3em;
+  cursor:pointer;
+  background-color: #ff9527;
+  color:white;
+  font-size: 18px;
+  padding: 22px 0px 22px 0px;
+  margin-top:-4px;
+  font-weight: 600;
+  left:50%;
+  margin-left:-100px;
+  position: absolute;
+  bottom: 30px;
+}
+#submit:hover
+{
+  background: #e27f00;
+}
+#submit1
+{
+  font-family: Proxima Nova;
+  width: 40%;
+  border:none;
+  border-radius: 0.3em;
+  cursor:pointer;
+  background-color: #ff9527;
+  color:white;
+ font-size: 18px;
+  padding: 22px 0px 22px 0px;
+  margin-top:-4px;
+  font-weight: 600;
+  left:50%;
+  margin-left:-100px;
+  position: relative;
+  bottom: 0px;
+}
+#submit1:hover
+{
+  background: #e27f00;
+}
+
+/*-----------------------------------
+    Footer
+-------------------------------------*/
+footer 
+{
+  background-color: #F3F3F3;
+  height: 140px;
+  width: 100%;
+  color: #000000;
+  list-style-type: none;
+  font-family: Proxima Nova;
+  font-size: 20px;
+  font-variant: normal;
+  font-weight: lighter;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+#pagefooter
+{
+  margin: 0px;
+  list-style-type: none;
+}
+#pagefooter li
+{
+  padding: 10px 0px 0px 0px;
+  float: left;
+  padding-left: 155px;
+  font-size: 14px;
+}
+#pagefooter a
+{
+    color: #000000;
+    text-decoration: none;
+}
+a:hover 
+{
+  color: #B9B9B9 !important;
+}
+.hide
+{
+   display:none;
+}

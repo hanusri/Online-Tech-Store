@@ -1,0 +1,70 @@
+CREATE TABLE `user` (
+ `User_Id` varchar(10) NOT NULL,
+ `Password` varchar(16) NOT NULL,
+ `Date_Of_Birth` date NOT NULL,
+ `First_Name` varchar(50) NOT NULL,
+ `Middle_Name` varchar(50),
+ `Last_Name` varchar(50) NOT NULL,
+ `Email` varchar(25) NOT NULL,
+ `Phone` varchar(10),
+ `Category` varchar(1) NOT NULL,
+ PRIMARY KEY (`User_Id`)
+);
+
+CREATE TABLE `product` (
+ `Product_Code` varchar(24) NOT NULL,
+ `Name` varchar(50) NOT NULL,
+ `Description` varchar(3000) NOT NULL,
+ `ImageURL` varchar(50) DEFAULT NULL,
+ `List_Price` decimal(15,2) DEFAULT NULL,
+ `Sale_Price` decimal(15,2) DEFAULT NULL,
+ `Category` varchar(15) NOT NULL,
+ `Brand` varchar(25) NOT NULL,
+ `Available_Quantity` int(11) NOT NULL,
+ `Latest_Flag` varchar(1) NOT NULL,
+ `FreeShip_Flag` varchar(1) NOT NULL,
+ `Deleted` varchar(1) NOT NULL,
+ PRIMARY KEY (`Product_Code`)
+);
+
+CREATE TABLE `productdeal` (
+ `Product_Code` varchar(24) NOT NULL,
+ `Status` varchar(10) NOT NULL,
+ `Deal_Type` varchar(10) NOT NULL,
+ `Discount_Price` decimal(15,2) NOT NULL,
+ PRIMARY KEY (`Product_Code`,`Status`,`Deal_Type`),
+  FOREIGN KEY (Product_Code) 
+        REFERENCES product(Product_Code)
+);
+
+CREATE TABLE `user_cart` (
+ `User_Id` varchar(8) NOT NULL,
+ `Product_Code` varchar(24) NOT NULL,
+ `Quantity` int(11) NOT NULL,
+ PRIMARY KEY (`User_Id`,`Product_Code`),
+ FOREIGN KEY (Product_Code) 
+        REFERENCES product(Product_Code),
+ FOREIGN KEY (User_Id) 
+        REFERENCES user(User_Id)
+);
+
+CREATE TABLE `order_history` (
+ `Order_Id` int(11) NOT NULL AUTO_INCREMENT,
+ `User_Id` varchar(8) NOT NULL,
+ `Order_Date` date NOT NULL,
+ `Payment_Status` varchar(10) DEFAULT NULL,
+ `Final_Price` decimal(15,2) NULL,
+ PRIMARY KEY (`Order_Id`),
+ FOREIGN KEY (User_Id) 
+        REFERENCES user(User_Id)
+);
+
+CREATE TABLE `order_detail` (
+ `Order_Id` int(11) NOT NULL,
+ `Product_Code` varchar(24) NOT NULL,
+ `Quantity` int(11) NOT NULL,
+ `Item_Price` decimal(15,2) NOT NULL,
+ PRIMARY KEY (`Order_Id`,`Product_Code`),
+ FOREIGN KEY (Product_Code) 
+        REFERENCES product(Product_Code)
+);

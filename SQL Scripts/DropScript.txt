@@ -1,0 +1,6 @@
+DROP TABLE order_detail;
+DROP TABLE order_history;
+DROP TABLE user_cart;
+DROP TABLE productdeal;
+DROP TABLE product;
+DROP TABLE user;

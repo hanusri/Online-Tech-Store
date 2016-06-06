@@ -1,0 +1,129 @@
+/*-----------------------------------
+    Sign-in Page CSS
+-------------------------------------*/
+#signinbody
+{
+  background:url(../img/addtocart/back.jpg)  no-repeat center fixed;
+  background-size: cover;
+  font-family: Proxima Nova;
+  padding: 35px 35px 50px 35px;
+  width: 400px;
+  float: center;
+  left: 400px;
+  margin: auto;
+  margin-top:40px;
+}
+#signindiv 
+{
+  background-color:rgba(72,72,72,0.4);
+  padding: 35px 35px 50px 35px;
+  width: 450px;
+  float: left;
+  left: 400px;
+  position: absolute;
+  margin-top:30px;
+}
+#signindiv a
+{
+  color: #ffffff;
+  text-decoration: none;
+}
+.addinput 
+{
+  color:#3c3c3c;
+  font-family: Proxima Nova;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 15px 15px 15px 55px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+    border: 3px solid #ffffff;
+}
+#submit
+{
+  font-family: Proxima Nova;
+  width: 40%;
+  border:none;
+  border-radius: 0.3em;
+  cursor:pointer;
+  background-color: #ff9527;
+  color:white;
+  font-size: 18px;
+  padding: 22px 0px 22px 0px;
+  margin-top:-4px;
+  font-weight: 600;
+  left:50%;
+  margin-left:-100px;
+  position: absolute;
+  bottom: 30px;
+}
+#submit:hover
+{
+  background: #e27f00;
+}
+
+/* Icons */
+#uname
+{
+  background-image: url(../img/addtocart/username.png);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#pwd
+{
+  background-image: url(../img/addtocart/lock.png);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+/* Signup */
+.addinput1
+{
+  color:#3c3c3c;
+  float: center;
+  font-family: Proxima Nova;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 2px;
+  background-color: #fbfbfb;
+  padding: 15px 15px 15px 55px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid #ffffff;
+}
+
+/*--------Forgot Password--------*/
+#uname1
+{
+  background-image: url(../img/addtocart/username.png);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#pass1
+{
+  background-image: url(../img/addtocart/lock.png);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#pass2
+{
+  background-image: url(../img/addtocart/lock.png);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
